@@ -8,17 +8,14 @@ import {
   ChevronDown,
   Phone,
   Mail,
-  MapPin,
   Facebook,
   Twitter,
   Instagram,
   Linkedin,
-  ArrowRight,
   Car,
   Wrench,
   Clock,
   Users,
-  Bell
 } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -317,7 +314,7 @@ const Footer = () => {
               <Image src="/images/logo.png" alt="ServisLah Logo" width={250} height={250} />
             </div>
             <p className="text-gray-600 mb-8 max-w-md">
-              ServisLah is Malaysia's leading car service platform, connecting vehicle owners 
+              ServisLah is Malaysia&apos;s leading car service platform, connecting vehicle owners 
               with trusted service centers for a seamless maintenance experience.
             </p>
             <div className="flex items-center space-x-6">

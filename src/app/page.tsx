@@ -1,19 +1,13 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion  } from 'framer-motion';
 import { 
   Clock, 
   Shield, 
-  Zap, 
-  Car,
   Wrench,
-  Phone,
   Star,
-  ArrowRight,
   MessageSquare,
   BellRing,
-  CheckCircle,
   MapPin
 } from 'lucide-react';
 
