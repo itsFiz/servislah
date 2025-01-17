@@ -27,7 +27,7 @@ const Hero = () => {
     <div className="relative min-h-screen flex items-center">
       {/* Animated Background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#484eff]/10 to-white/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#484eff]/10 via-white/90 to-white/50" />
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -245,7 +245,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <div className="bg-[#484eff]/5 py-20">
+    <div className="bg-gradient-to-b from-white/90 to-[#484eff]/5 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

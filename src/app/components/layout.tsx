@@ -122,7 +122,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-4">
               <button className="hover:text-[#a6a9fe] transition-colors">Download App</button>
-              <button className="hover:text-[#a6a9fe] transition-colors">Partner Login</button>
+              {/* <button className="hover:text-[#a6a9fe] transition-colors">Partner Login</button> */}
             </div>
           </div>
         </div>
