@@ -15,7 +15,11 @@ import {
   Car,
   Wrench,
   Clock,
-  Users,
+  Briefcase,
+  HelpCircle,
+  MessagesSquare,
+  Building2,
+  Building,
 } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -34,24 +38,59 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+
   const navigationItems = [
     {
-      label: 'Services',
+      label: 'For Car Owners',
+      featured: true,
       items: [
-        { label: 'Car Service', icon: Car },
-        { label: 'Maintenance', icon: Wrench },
-        { label: 'Quick Service', icon: Clock },
-        { label: 'Fleet Service', icon: Users },
+        { 
+          label: 'Car Service',
+          description: 'Schedule and manage your car service appointments',
+          icon: Car 
+        },
+        { 
+          label: 'Maintenance Tracking',
+          description: 'Track and plan your vehicle maintenance schedule',
+          icon: Wrench 
+        },
+        { 
+          label: 'Quick Service',
+          description: 'Rapid service options for urgent maintenance needs',
+          icon: Clock 
+        },
+        { 
+          label: 'Fleet Management',
+          description: 'Comprehensive solutions for managing multiple vehicles',
+          icon: Briefcase 
+        },
       ]
     },
     {
       label: 'For Business',
+      featured: true,
       items: [
-        { label: 'Service Centers', icon: Wrench },
-        { label: 'Fleet Management', icon: Car },
-        { label: 'Enterprise', icon: Users },
-        { label: 'Testimonials', icon: Users },
-        { label: 'FAQ', icon: Users },
+        { 
+          label: 'Service Centers',
+          description: 'Partner with us to grow your service center',
+          icon: Building 
+        },
+        { 
+          label: 'Enterprise Solutions',
+          description: 'Custom solutions for large organizations',
+          icon: Building2 
+        },
+        
+        { 
+          label: 'Success Stories',
+          description: 'See how businesses succeed with us',
+          icon: MessagesSquare 
+        },
+        { 
+          label: 'Support',
+          description: 'Get help with our business solutions',
+          icon: HelpCircle 
+        },
       ]
     },
     { label: 'Pricing' },
@@ -367,7 +406,7 @@ const Footer = () => {
         </div>
       </div>
       
-      {/* App Download Section */}
+      {/* App Download Section
       <div className="bg-[#484eff]/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -380,7 +419,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
-              {/* Replace with actual app store buttons */}
+               Replace with actual app store buttons 
               <Link href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer" className="flex items-center">
                 <Image src="/images/App-Store-Symbol.png" alt="App Store" width={120} height={120} />
               </Link>
@@ -389,8 +428,8 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-        </div>
-      </div>
+        </div> 
+      </div> */}
     </footer>
   );
 };
